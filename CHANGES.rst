@@ -2,6 +2,31 @@
  Changes
 =========
 
+5.5.2 (2022-11-17)
+==================
+
+- Add support for building arm64 wheels on macOS.
+
+
+5.5.1 (2022-11-03)
+==================
+
+- Add support for final Python 3.11 release.
+
+
+5.5.0 (2022-10-10)
+==================
+
+- Add support for Python 3.10 and 3.11 (as of 3.11.0rc2).
+
+- Add missing Trove classifier showing support for Python 3.9.
+
+- Add some more entries to ``zope.interface.interfaces.__all__``.
+
+- Disable unsafe math optimizations in C code.  See `pull request 262
+  <https://github.com/zopefoundation/zope.interface/pull/262>`_.
+
+
 5.4.0 (2021-04-15)
 ==================
 
@@ -960,14 +985,14 @@ Bug Fixes
 3.2.0 (2006-01-05)
 ==================
 
-- Corresponds to the verison of the zope.interface package shipped as part of
+- Corresponds to the version of the zope.interface package shipped as part of
   the Zope 3.2.0 release.
 
 
 3.1.0 (2005-10-03)
 ==================
 
-- Corresponds to the verison of the zope.interface package shipped as part of
+- Corresponds to the version of the zope.interface package shipped as part of
   the Zope 3.1.0 release.
 
 - Made attribute resolution order consistent with component lookup order,
@@ -980,7 +1005,7 @@ Bug Fixes
 3.0.1 (2005-07-27)
 ==================
 
-- Corresponds to the verison of the zope.interface package shipped as part of
+- Corresponds to the version of the zope.interface package shipped as part of
   the Zope X3.0.1 release.
 
 - Fix a bug reported by James Knight, which caused adapter registries
@@ -990,5 +1015,5 @@ Bug Fixes
 3.0.0 (2004-11-07)
 ==================
 
-- Corresponds to the verison of the zope.interface package shipped as part of
+- Corresponds to the version of the zope.interface package shipped as part of
   the Zope X3.0.0 release.
