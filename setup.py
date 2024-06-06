@@ -21,14 +21,14 @@
 
 import os
 import sys
-
 from distutils.errors import CCompilerError
 from distutils.errors import DistutilsExecError
 from distutils.errors import DistutilsPlatformError
 
-from setuptools import setup, Extension
-from setuptools.command.build_ext import build_ext
+from setuptools import Extension
 from setuptools import find_packages
+from setuptools import setup
+from setuptools.command.build_ext import build_ext
 
 
 class optional_build_ext(build_ext):
@@ -100,7 +100,7 @@ long_description = (
         )
 
 setup(name='zope.interface',
-      version='5.5.2',
+      version='6.4',
       url='https://github.com/zopefoundation/zope.interface',
       license='ZPL 2.1',
       description='Interfaces for Python',
@@ -113,16 +113,13 @@ setup(name='zope.interface',
           "License :: OSI Approved :: Zope Public License",
           "Operating System :: OS Independent",
           "Programming Language :: Python",
-          "Programming Language :: Python :: 2",
-          "Programming Language :: Python :: 2.7",
           "Programming Language :: Python :: 3",
-          "Programming Language :: Python :: 3.5",
-          "Programming Language :: Python :: 3.6",
           "Programming Language :: Python :: 3.7",
           "Programming Language :: Python :: 3.8",
           "Programming Language :: Python :: 3.9",
           "Programming Language :: Python :: 3.10",
           "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
           "Programming Language :: Python :: Implementation :: CPython",
           "Programming Language :: Python :: Implementation :: PyPy",
           "Framework :: Zope :: 3",
@@ -139,16 +136,11 @@ setup(name='zope.interface',
       zip_safe=False,
       tests_require=tests_require,
       install_requires=['setuptools'],
-      python_requires=', '.join([
-          '>=2.7',
-          '!=3.0.*',
-          '!=3.1.*',
-          '!=3.2.*',
-          '!=3.3.*',
-          '!=3.4.*',
-      ]),
+      python_requires='>=3.7',
       extras_require={
-          'docs': ['Sphinx', 'repoze.sphinx.autointerface'],
+          'docs': ['Sphinx',
+                   'repoze.sphinx.autointerface',
+                   'sphinx_rtd_theme'],
           'test': tests_require,
           'testing': testing_extras,
       },

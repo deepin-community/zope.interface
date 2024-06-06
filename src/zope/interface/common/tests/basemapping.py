@@ -15,6 +15,7 @@
 """
 from operator import __getitem__
 
+
 def testIReadMapping(self, inst, state, absent):
     for key in state:
         self.assertEqual(inst[key], state[key])
@@ -63,7 +64,7 @@ def testIEnumerableMapping(self, inst, state):
     test___len__(self, inst, state)
 
 
-class BaseTestIReadMapping(object):
+class BaseTestIReadMapping:
     def testIReadMapping(self):
         inst = self._IReadMapping__sample()
         state = self._IReadMapping__stateDict()
