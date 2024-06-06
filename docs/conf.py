@@ -56,14 +56,14 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'zope.interface'
-copyright = '2012-2017, Zope Foundation contributors'
+copyright = '2012-2023, Zope Foundation contributors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '%s.%s' % tuple(map(int, rqmt.version.split('.')[:2]))
+version = '%s.%s' % tuple(rqmt.version.split('.')[:2])
 # The full version, including alpha/beta/rc tags.
 release = rqmt.version
 
@@ -106,7 +106,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -263,9 +263,9 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
-    'https://docs.python.org/': None,
-    'https://persistent.readthedocs.io/en/latest/': None,
-    'https://btrees.readthedocs.io/en/latest/': None,
+    'python': ('https://docs.python.org/', None),
+    'persistent': ('https://persistent.readthedocs.io/en/latest/', None),
+    'btrees': ('https://btrees.readthedocs.io/en/latest/', None),
 }
 
 # Sphinx 1.8+ prefers this to `autodoc_default_flags`. It's documented that

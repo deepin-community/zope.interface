@@ -2,6 +2,57 @@
  Changes
 =========
 
+6.4 (2024-05-15)
+================
+
+- Adjust for incompatible changes in Python 3.13b1.
+  (`#292 <https://github.com/zopefoundation/zope.interface/issues/292>`)
+
+- Build windows wheels on GHA.
+
+6.3 (2024-04-12)
+================
+
+- Add preliminary support for Python 3.13 as of 3.13a6.
+
+
+6.2 (2024-02-16)
+================
+
+- Add preliminary support for Python 3.13 as of 3.13a3.
+
+- Add support to use the pipe (``|``) syntax for ``typing.Union``.
+  (`#280 <https://github.com/zopefoundation/zope.interface/issues/280>`_)
+
+
+6.1 (2023-10-05)
+================
+
+- Build Linux binary wheels for Python 3.12.
+
+- Add support for Python 3.12.
+
+- Fix building of the docs for non-final versions.
+
+
+6.0 (2023-03-17)
+================
+
+- Build Linux binary wheels for Python 3.11.
+
+- Drop support for Python 2.7, 3.5, 3.6.
+
+- Fix test deprecation warning on Python 3.11.
+
+- Add preliminary support for Python 3.12 as of 3.12a5.
+
+- Drop:
+
+    + `zope.interface.implements`
+    + `zope.interface.implementsOnly`
+    + `zope.interface.classProvides`
+
+
 5.5.2 (2022-11-17)
 ==================
 
